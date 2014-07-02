@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+</head>
+<body>
+  <script type="text/javascript">
+
+
+//Exercise: Fortune Teller
+
+	function tellFortune(childrenNum, partnerName, geographicLocation, jobTitle){
+
+		document.write("You will be a " + jobTitle + " in "+ geographicLocation + " and married to " + partnerName + " with " + childrenNum + " kids. <br />")
+
+	}
+
+	tellFortune(3, "Mary", "Paris", "Entrepreneur");
+  
+
+//Exerise: Age Calculator
+
+
+	function calculateAge(birthYear, currentYear){
+		document.write("You are either " + (currentYear-birthYear) + " or " + (birthYear-currentYear) + "<br />")
+	}
+
+	calculateAge(1993, 2014)
+	
+
+//Exercise: Lifetime Supply Calculator
+
+	function calculateSupply(currentAge, dailyAmount){
+	var maximumAge = 85
+
+	var total = (maximumAge-currentAge)*365*dailyAmount
+	document.write("You will need a total of " + total + " to last you until the ripe old age of " + maximumAge + "<br />")
+	}
+
+	calculateSupply(21, 0.5)
+
+//Exercise: Geometrizer
+
+	function calcCircumfrence(radius){
+		var circumference = radius*2*3.14
+	document.write("The circumference is " + circumference + "<br />")
+	}
+
+	calcCircumfrence(2)
+
+	function calcArea(radius){
+	var area = 3.14*Math.pow(radius,2)
+	document.write("The area is " + area + "<br />")
+	}	
+
+	calcArea(2)
+
+
+//Exercise: Temeprature Converter
+
+	function celsiusToFahrenheit(celcius){
+	var ctof = celcius*(9/5)+32
+	document.write(celcius + " in celcius is " + ctof + " in fahrenheit <br />")
+	}
+
+	celsiusToFahrenheit(36)
+
+	function fahrenheitToCelsius(fahrenheit){
+	var ftoc = (fahrenheit-32)*(5/9)
+	document.write(fahrenheit + " in fahrenheit is " + ftoc + " in celcius <br />")
+	}
+
+	fahrenheitToCelsius(98)
+
+</script>
+</body>
+</html>

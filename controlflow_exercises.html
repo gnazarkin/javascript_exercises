@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+</head>
+<body>
+  <script type="text/javascript">
+
+//Exercise: What number's bigger?
+
+	function greaterNum(x,y){
+	if(x>y){
+		var greater = x
+	}else{
+		var greater = y
+	}
+	document.write("The greater number out of " + x + " and " + y + " is " + greater + "<br />")
+	}
+
+	greaterNum(3,4)
+	greaterNum(10,7)
+
+//Exercise: World Translator
+	
+	function helloWorld(code){
+		if(code === "es"){
+			document.write("Hello world in Spanish")
+		}else if (code === "en"){
+			document.write("Hello world in English")
+		}else if (code === "rus"){
+			document.write("Privet Mir")
+		}else {
+			document.write("I dont support that language")
+		}
+			document.write("<br />")
+	}
+
+	helloWorld("es")
+	helloWorld("rus")
+
+//Exercise: Grade Assigner
+
+	function assignGrade(score){
+		if(score > 90){
+			document.write("A")
+		}else if (score < 90 && score >= 80){
+			document.write("B")
+		}else if (score < 80 && score >= 70){
+			document.write("C")
+		}else if (score < 70 && score >= 60){
+			document.write("D")
+		}else if (score < 60){
+			document.write("F")
+		}
+		document.write("<br />")
+	}
+
+	assignGrade(23)
+	assignGrade(80)
+	assignGrade(95)
+
+
+</script>
+</body>
+</html>

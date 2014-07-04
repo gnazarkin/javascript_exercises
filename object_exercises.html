@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+</head>
+<body>
+  <script type="text/javascript">
+
+//Exercise: Recipe Card
+
+var recipeBook = new Object();
+
+function addRecipe(title, servings, ingredients){
+	recipe = new Object();
+	recipeBook[title] = recipe;
+	recipe.servings = servings;
+	recipe.ingredients = ingredients;
+}
+
+function seeRecipe(title){
+	recipe = recipeBook[title];
+	console.log(title);
+	console.log("Servings: " + recipe.servings);
+	recipe.ingredients.map( function(item){console.log(item)});
+}
+
+addRecipe("Nutella Bread", 2, ["nutella","bread"]);
+seeRecipe("Nutella Bread");
+
+//Exercise: Reading List
+
+var books = [];
+
+function addBook(title, author, read){
+	var book = {
+		title: title,
+		author: author,
+		read: read
+	}
+	books.push(book);
+}
+
+addBook("Good to Great", "Jim Collins", true);
+addBook("Built to Last", "Jim Collins", false);
+
+books.map(function(book){
+	if(book.read){
+		console.log("You have read " + book.title + " by " + book.author);
+	}else{
+		console.log("You have not read " + book.title + " by " +book.author)
+	}
+});
+
+//Exercise: Movie Database
+
+var movies = [];
+
+function addMovie(title, duration, stars){
+	var movie = {
+		title: title,
+		duration: duration,
+		stars: stars
+	}
+	movies.push(movie);
+}
+
+addMovie("Fight Club", "2 hours", ["Brad Pitt", "Edward Norton"])
+
+movies.map(function(movie){
+	console.log(movie.title + " is " + movie.duration + " long, with stars: " + movie.stars.join(", ") + ".")
+})
+
+
+
+
+</script>
+</body>
+</html>
